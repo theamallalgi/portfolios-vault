@@ -1,0 +1,59 @@
+*, *::after *::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #0d0910;
+  font-family: 'Kode Mono', monospace;
+  font-size: 2rem;
+  color: #8543e4;
+  letter-spacing: 0.05px;
+  line-height: 1;
+  padding: 1rem 1.5rem;
+
+  ::selection {
+    background: #201638;
+    color: #8543e4;
+  }
+}
+
+h2 {
+  font-size: 3rem;
+  margin-bottom: 0;
+  font-weight: bold;
+  line-height: 1;
+}
+
+p {
+  font-size: 1rem;
+  max-width: 40ch;
+  margin-top: 1rem;
+  margin-bottom: 0;
+}
+
+.links {
+  margin: 0.25rem;
+  ul {
+    margin-block: 0;
+    list-style: none;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-left: 0;
+    li {
+      margin: 0;
+      a {
+        // text-decoration: none;
+        // color: #46cda8;
+        color: #8543e4;
+        font-size: 0.5rem;
+      }
+    }
+    li + li {
+      padding-left: 1rem;
+    }
+  }
+}
