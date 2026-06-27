@@ -1,3 +1,6 @@
+$font-heading: "Orbitron", sans-serif;
+$font-body: "Archivo", sans-serif;
+
 *, *::after *::before {
   margin: 0;
   padding: 0;
@@ -5,32 +8,59 @@
 }
 
 body {
-  background: #0d0910;
-  font-family: 'Kode Mono', monospace;
+  background: #a4a4a4;
+  font-family: $font-body;
   font-size: 2rem;
-  color: #8543e4;
+  color: #000000;
   letter-spacing: 0.05px;
   line-height: 1;
-  padding: 1rem 1.5rem;
+  padding: 1.0rem 0.75rem;
 
   ::selection {
-    background: #201638;
-    color: #8543e4;
+    background: #000000;
+    color: #A4A4A4;
   }
 }
 
-h2 {
-  font-size: 4.5rem;
-  margin-bottom: 0;
-  font-weight: 700;
+h1 {
+  font-size: 2rem;
+  letter-spacing: -1px;
+  text-transform: uppercase;
+  margin: 0;
+  font-weight: 900;
   line-height: 1;
+  font-family: $font-heading;
+  background: #000000;
+  color: #A4A4A4;
+  display: inline-block;
+  padding-inline: 0.50rem;
+  padding-block: 0.25rem;
+  margin-left: -1.5rem;
+  padding-left: 1.5rem;
+  max-width: min-content;
+
+  &::selection {
+    background: #A4A4A4;
+    color: #000000;
+  }
 }
 
 p {
-  font-size: 1.5rem;
-  max-width: 40ch;
+  font-size: 1rem;
+  max-width: 38ch;
   margin-top: 1rem;
   margin-bottom: 0.5rem;
+}
+
+h3 {
+  font-size: 1rem;
+  margin: 0;
+  margin-top: 3rem;
+  font-weight: 400;
+  line-height: 1;
+  font-family: $font-body;
+  color: #000000;
+  padding-inline: 0.25rem;
 }
 
 .links {
@@ -43,17 +73,21 @@ p {
     align-items: center;
     flex-wrap: wrap;
     padding-left: 0;
+    text-underline-offset: 0.25rem;
     li {
       margin: 0;
       a {
-        // text-decoration: none;
-        // color: #46cda8;
-        color: #8543e4;
+        color: #000000;
         font-size: 1rem;
+        &:hover {
+          background: #000000;
+          color: #a4a4a4;
+          text-decoration-color: #000000;
+        }
       }
     }
     li + li {
-      padding-left: 1rem;
+      padding-left: 0.75rem;
     }
   }
 }
